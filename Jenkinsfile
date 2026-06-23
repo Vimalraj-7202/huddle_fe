@@ -10,18 +10,18 @@ pipeline
             }
             stage('Install Dependencies') {
                 steps {
-                    sh 'npm install'
+                    sh 'pnpm install'
                 }
             }
             stage('Execute Test') {
                 steps {
-                    sh 'npm run test'
+                    sh 'pnpm run test'
                 }
             }
 
             stage('Build Project') {
                 steps {
-                    sh 'npm run build'
+                    sh 'pnpm run build'
                 }
             }
         }
