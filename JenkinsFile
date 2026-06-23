@@ -1,15 +1,15 @@
 pipeline
 {
-    agent any 
+    agent any
         stages {
             stage('Git Checkout') {
-                step {
+                steps {
                     git branch:'dev',
-            url:'https://github.com/Vimalraj-7202/huddle_fe.git'
+                        url:'https://github.com/Vimalraj-7202/huddle_fe.git'
                 }
             }
             stage('Install Dependencies') {
-                step {
+                steps {
                     sh 'npm install'
                 }
             }
@@ -25,5 +25,5 @@ pipeline
                 }
             }
         }
-    }
+}
 
