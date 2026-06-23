@@ -118,7 +118,7 @@ const LoginPage = () => {
               align="center"
               sx={{ color: "#ffffff", fontWeight: "bold" }}
             >
-              Huddle
+              huddle
             </Typography>
 
             <Typography
