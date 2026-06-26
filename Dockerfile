@@ -2,9 +2,12 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+ENV CI=true
+
 COPY package.json pnpm-lock.yaml ./
 
-RUN corepack enable && pnpm install --frozen-lockfile
+RUN corepack enable
+RUN pnpm install --frozen-lockfile
 
 COPY . .
 
