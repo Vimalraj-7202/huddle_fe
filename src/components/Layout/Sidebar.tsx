@@ -1,20 +1,12 @@
-import {
-  Drawer,
-  List,
-  ListItemButton,
-  ListItemIcon,
-  Box,
-  Tooltip,
-} from "@mui/material";
+import {Drawer,List,ListItemButton,ListItemIcon,Box,Tooltip} from "@mui/material";
 import { NavLink, useNavigate } from "react-router-dom";
 import AppLogo from "@/components/common/AppLogo";
-
 import DashboardIcon from "@mui/icons-material/SpaceDashboardRounded";
 import ChatIcon from "@mui/icons-material/ChatRounded";
 import SettingsIcon from "@mui/icons-material/SettingsSuggestRounded";
 import LogoutIcon from "@mui/icons-material/LogoutRounded";
 
-const drawerWidth = 66;
+const drawerWidth = 68;
 const size = 26;
 
 const navButtonSx = {
